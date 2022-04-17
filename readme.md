@@ -5,6 +5,7 @@ A collection of APIs gathered from reverse engineering and network traffic analy
 ## General API Information
 
 The base endpoint for `POST` requests for data is https://hangrybbapiprod-main.azurewebsites.net
+
 The base endpoint for `GET` requests for media is https://hangrybbprod.blob.core.windows.net
 
 ## Get Campus Locations
