@@ -19,7 +19,7 @@ POST /api_user/getcampuslocations
 | login_token | Required     |
 | sessionid   | Not Required |
 
-Include the campus ID in the JSON body.
+### Body
 
 ```json
 {
@@ -44,11 +44,13 @@ Include the campus ID in the JSON body.
 
 64 character alpha-numeric string
 
+For example, `2e99d0233fcdc9c5177744d92d997c4a0c2a58953be940932917af4af07a8486`
+
 #### `locations`
 
 Array of objects representing locations
 
-### `message`
+#### `message`
 
 | Condition                   | Message                                                               |
 | --------------------------- | --------------------------------------------------------------------- |
@@ -68,3 +70,5 @@ Object representing user
 #### `cafeterias`
 
 Array of objects representing dining halls/cafeterias
+
+## ...
