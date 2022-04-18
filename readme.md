@@ -8,11 +8,48 @@ The base endpoint for `POST` requests for data is https://hangrybbapiprod-main.a
 
 The base endpoint for `GET` requests for media is https://hangrybbprod.blob.core.windows.net
 
+## Get All Campuses
+
+`POST /api_user/getcampuseswithbundlename`
+
+### Headers
+
+| Header      | Description  |
+| ----------- | ------------ |
+| api_key     | Required     |
+| login_token | Not Required |
+| sessionid   | Not Required |
+
+### Body
+
+```json
+{
+  "app_bundle_name": "com.transact.mobileorder"
+}
+```
+
+### Response
+
+```json
+{
+    "app_kill_text",
+    "web_instanceid",
+    "app_kill_url",
+    "message",
+    "bundle",
+    "app_kill_switch",
+    "status",
+    "campuses"
+}
+```
+
 ## Get Campus Locations
 
 ```
 POST /api_user/getcampuslocations
 ```
+
+### Headers
 
 | Header      | Description  |
 | ----------- | ------------ |
